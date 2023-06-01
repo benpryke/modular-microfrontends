@@ -1,15 +1,30 @@
 # Micro-Front End Portal
 
-## Getting Started
+This repo is a demo of how to use Modular to create an application composed of
+multiple microfrontends.
 
-Load dependencies and start up the application catalogue server and build the
-host view.
+Components:
+
+1. Host app.
+1. Component apps.
+1. Application catalogue server.
+
+Features:
+
+- Dynamical view discovery.
+- Dynamically add new views to a host app.
+- Realtime communication between host and micro-frontends.
+
+## Get started
+
+Load dependencies, start up the application catalogue server, build the host
+view.
 
 ```bash
-yarn && yarn serve
+yarn && yarn scaffold && yarn serve
 ```
 
-## Create an Application
+## Under the hood
 
 ### Example apps
 
