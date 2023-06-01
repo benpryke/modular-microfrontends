@@ -16,9 +16,10 @@
     "test": "modular test",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "prettier": "prettier --write .",
-    "clean": "git clean -fxd dist",
+    "clean": "git clean -fxd dist && rm -rf packages/card-view packages/grid-view packages/simple-app",
+    "scaffold": "./scripts/scaffold.sh",
     "serve": "yarn workspace server start & modular start host",
-    "build:pages": "./build-pages.sh"
+    "build:pages": "./scripts/build-pages.sh"
   },
   "dependencies": {
     "react": "^18.2.0",
