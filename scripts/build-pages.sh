@@ -1,5 +1,5 @@
 rm -fr dist
-./scaffold.sh
+./scripts/scaffold.sh
 REACT_APP_REGISTY_URL="/microfrontends/registry.json" yarn modular build host
 mkdir -p dist/pages/microfrontends
 echo '[' >> dist/pages/microfrontends/registry.json
